@@ -1,0 +1,39 @@
+
+body {
+    background-color: #f0f0f0; 
+    color: #333333; 
+    
+    /* Нові правила для правильного розміщення */
+    margin: 0; 
+    padding: 5px; /* Ті самі 5 пікселів від краю вікна */
+    box-sizing: border-box; /* Включає padding у загальний розмір вікна, щоб не було скролу */
+    height: 100vh; /* Висота рівно на весь екран */
+    display: flex; /* Робимо body флекс-контейнером */
+}
+
+/* Стилі для текстового поля */
+textarea {
+    background-color: #f0f0f0; 
+    color: #333333; 
+    border: none; 
+    outline: none; 
+    padding: 5px; /* Внутрішній відступ тексту від країв самої textarea */
+    resize: none; 
+
+    /* Нові правила для розтягування */
+    flex-grow: 1; /* Змушує поле зайняти весь доступний простір усередині body */
+    width: 100%; /* Займає всю ширину */
+    box-sizing: border-box; /* Гарантує, що padding не розірве розміри поля */
+}
+
+/* 2. Стилі для Темної теми системи */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1e1e1e; /* Темно-сірий фон сторінки (як у VS Code) */
+        color: #ffffff; /* Білий текст */
+    }
+    textarea {
+        background-color: #1e1e1e; /* Темно-сірий фон сторінки (як у VS Code) */
+        color: #ffffff; /* Білий текст */}
+}
+  

@@ -1,0 +1,18 @@
+.vs/ 
+bin/ 
+obj/ 
+build/
+*.user
+
+
+# Залежності Node.js
+node_modules/
+
+# Папки збірки Qt та Android
+build/
+*.apk
+*.exe
+
+# Службові файли IDE
+*.user
+.vscode/
